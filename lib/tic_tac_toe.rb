@@ -17,11 +17,11 @@ def input_to_index(user_input)
 end
 
 def move(index, current_player = "X")
-  @board[index] = current_player
+  board[index] = current_player
 end
 
 def position_taken?(index)
-  !(@board[index].nil? || @board[index] == " ")
+  !(board[index].nil? || board[index] == " ")
 end
 
 def valid_move?(index)
